@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="about me.html"><strong>About me</strong></a></li>
+    <li><a href="interest.html"><strong>Interest</strong></a></li>
+    <li><a href="family.html"><strong>My Family</strong></a></li>
+	<li><a href="education.html"><strong>Education</strong></a></li>
+	<li><a href="gallery.html"><strong>Gallery</strong></a></li>
+  </ul>
+</nav>
+<div id="loading">
+    <div class="guitar">
+        <span>🎱</span>
+        <span>🎱</span>
+        <span>🎱</span>
+    </div>
+    <p><strong>Loading...</strong></p>
+</div>
+
+
+<head>
+
+<title>My Family </title>
+<link rel="stylesheet" href="style.css">
+</head>
+</body>
+
+  <img src="family.jpg" alt="education" width="100%" height="25%">
+</div>
+<div style="text-align:center">
+  <h2>WELCOME TO MY FAMILY</h2>
+  <p>here a bit info about my siblings:</p>
+</div>
+
+<div class="row" style="display: flex; gap: 20px; padding: 20px; justify-content: center;">
+
+  <div class="column" style="flex: 1; background-color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+    <img src="afrina.jpeg" alt="afrina" style="width:100%; display: block; border-radius: 4px;" onclick="myFunction(this);">
+    <div style="padding: 10px; color: #7a3030; font-weight: bold; font-family: Arial;">
+      Afrina fatihah - (The Eldest sibling)
+	  I’m the “kakak” — firm, sometimes fierce, and emotional depending on my mood. I spend time with my siblings when I can, listen to their cute school problems, and yes, we do argue from time to time. 
+	  But at the end of the day, I only want the best for them. I may not be the softest sister, but I try to lead by example and love them in my own way.Born :18 October 2005
+    </div>
+  </div>
+
+  <div class="column" style="flex: 1; background-color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+    <img src="abal.jpeg" alt="hezbal" style="width:100%; display: block; border-radius: 4px;" onclick="myFunction(this);">
+    <div style="padding: 10px; color: #7a3030; font-weight: bold; font-family: Arial;">
+     👦Abal — Muhamad Hezbal Merdiyyaz
+	 16 years old | Second child
+The quiet and introverted one in the family. He’s very tall, calm, and noticeably more alim compared to the rest of us. Not the funniest, but he always tries — and that effort itself is cute.
+Born: 15 June 2010 
+    </div>
+  </div>
+
+  <div class="column" style="flex: 1; background-color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+    <img src="rais.jpeg" alt="rais" style="width:100%; display: block; border-radius: 4px;" onclick="myFunction(this);">
+    <div style="padding: 10px; color: #7a3030; font-weight: bold; font-family: Arial;">
+   
+	  🧑 Rais — Ahmad Emmrais Rob Aidid
+
+13 years old | Third child
+A sports lover with endless energy. He loves teasing people, is sensitive at heart, and always cracking jokes — basically got my sense of humor. Currently studying at MCKK. A little hot-tempered, but full of character and charm.
+Born: 11 October 2013
+    </div>
+  </div>
+
+  <div class="column" style="flex: 1; background-color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+    <img src="dinda.jpeg" alt="dinda" style="width:100%; display: block; border-radius: 4px;" onclick="myFunction(this);">
+    <div style="padding: 10px; color: #7a3030; font-weight: bold; font-family: Arial;">
+     👧 Dinda — Dinda Salchaa
+
+Youngest child
+Active in sports and co-curricular activities. A total yapper — she loves talking, telling stories, and expressing her feelings. Sentimental, garang, and very protective. She follows almost everything her kakak does, has a soft heart, but also loves picking fights and complaining. Tall, loud, and full of personality.
+Born: 2 January 2015 
+    </div>
+  </div>
+
+</div>
+
+<div class="container" style="text-align: center; padding: 20px;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn" style="cursor:pointer; font-size: 30px; color: white;">&times;</span>
+  <img id="expandedImg" style="width:80%; margin-top: 10px;">
+  <div id="imgtext" style="color: white; padding: 10px;"></div>
+</div>
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2025 ♡ Afe page. All Rights Reserved.</p>
+        </div>
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-10-18</span>
+        <span><strong>Created:</strong> 2025-10-30</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    
+    </footer>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<nav>
+  <ul>
+    <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="about me.html"><strong>About me</strong></a></li>
+    <li><a href="interest.html"><strong>Interest</strong></a></li>
+    <li><a href="family.html"><strong>My Family</strong></a></li>
+	<li><a href="education.html"><strong>Education</strong></a></li>
+	<li><a href="gallery.html"><strong>Gallery</strong></a></li>
+  </ul>
+</nav>
+<div id="loading">
+    <div class="guitar">
+        <span>🎱</span>
+        <span>🎱</span>
+        <span>🎱</span>
+    </div>
+    <p><strong>Loading...</strong></p>
+</div>
+
+
+</head>
+
+<title>My Gallery</title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+<h2 style="text-align:center">welcome to my Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="afrina fatihah.jpg"style=width:100%"width "1500" height = "650">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="emmy family.jpg"style=width:100%"width "1500" height = "650">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+     <img src="bubu & chombie.jpg"style=width:100%"width"6500" height = "950">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+	<img src="diploma buddies.jpg"style=width:100%"width"11000" height = "1730">
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="trio.jpg" style="width:100%""width"15000" height = "730">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="intern.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(1)" alt="𝜗𝜚⋆₊˚Afrina Fatihah 𝜗𝜚⋆₊˚">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(2)" alt="Emmy family's. ˖  ꒰𑁬 ♡ ໒꒱  ˖ .">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(3)" alt="˙⋆✮Muhamad bubu & Chombie marakuchil˙⋆✮">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(4)" alt="Diploma buddies⋆˚꩜｡">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(5)" alt="home𐙚⋆.˚">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="liplap.jpg" style="width:100%" onclick="currentSlide(6)" alt="Internship˙⋆✮">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2025 ♡ Afe page. All Rights Reserved.</p>
+        </div>
+		<div class="info-dates">
+        <span><strong>Data Collected:</strong> 2025-10-18</span>
+        <span><strong>Created:</strong> 2025-10-30</span>
+        <span><strong>Last Updated:</strong> <span id="last-modified">Loading...</span></span>
+    </div>
+		<script src="date.js"></script>
+    
+    </footer>
+    
+
+</body>
+</html>
